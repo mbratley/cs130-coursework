@@ -4,18 +4,39 @@
 }
 
 body {
-    margin: 0px;
-    font-family: Arial, sans-serif;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
 header, section {
+    background-color: #aae6be;
     padding: 20px;
+}
+section {
+    flex-grow: 1
 }
 p, li {
     line-height: 1.5em;
 }
 
-#inspiration {
-    background-color: #F0F0F0;
+#tutorials {
+    background-color: #e6aaaa;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+    #homework {
+    background-color: #e16565;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+#inspiration {
+    background-color: #e6aaaa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
 }
