@@ -91,17 +91,21 @@ aside a {
 }
 aside a.selected {
     border-left:solid 3px rgb(72, 251, 18);
+    margin-left: 10px;
 }
 
 
 .fa-solid.fa-house::before{
     padding-right: 20px;
+    padding-left: 20px;
 }
 .fas.fa-search::before {
     margin-right: 20px;
+    padding-left: 20px;
 }
 .fas.fa-headphones-alt::before{
     margin-right: 20px;
+    margin-left: 10px;
 }
 
 /********************************/
