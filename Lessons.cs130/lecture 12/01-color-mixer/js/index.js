@@ -13,14 +13,17 @@ const updateColor = (ev) => {
     If yellow and blue are turned on, make the background green.
     If everything is turned on, then make the background black.
     */
-    if (redElement.value === 'on') {
+    if (redElement.value === 'on' && yellowElement.value === 'on'){
+        document.body.style.backgroundColor = 'orange';
+    } else if (redElement.value === 'on') {
         document.body.style.backgroundColor = 'red';
     } else if (yellowElement.value === 'on') {
         document.body.style.backgroundColor = 'yellow';
     } else {
         document.body.style.backgroundColor = 'white';
     }
-
+    
+    
 };
 
 // You can either attach event handlers dynamically (using JavaScript)...
