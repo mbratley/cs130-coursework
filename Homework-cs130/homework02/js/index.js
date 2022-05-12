@@ -36,7 +36,7 @@ const initScreen = () => {
             <div class="image" 
                 onclick="handleThumbnailClick(event)"
                 style="background-image:url('${image}')"
-                data-index=${idx}"
+                data-index="${idx}"
                 aria-label="Displays image ${idx} in the main panel."></div>
         </li>`;
     });
@@ -49,6 +49,10 @@ const handleThumbnailClick = ev => {
     console.log(elem);
     const bgImage = elem.style.backgroundImage;
     document.querySelector('.featured_image').style.backgroundImage = bgImage;
+
+    // update the CurrentIndex to the index associated with the thumbnail the user just clicked on
+    currentIndex= Number(elem.getAttribute('data-index'));
+    console.log(currentIndex);
 }
 // 1. create a function to handle the event
 // 2. attach that function to onclick event
