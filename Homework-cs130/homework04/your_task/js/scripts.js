@@ -26,11 +26,16 @@ const getTracks = (term) => {
             fetch(baseURL + "?type=track&q=" + term)
                 .then((data) => data.json())
                 .then((data) => {
-                    console.log("tracks: ", data );
+                    if (data.length>0){
+                        console.log("tracks: ", data );
                         const firstFive = data.slice(0, 5);
                         for(const artistData of firstFive){
                             elem.innerHTML += getTrackHTML (artistData);
                         }
+                    } else {
+                        elem.innerHTML = "no tracks found that match search criteria";
+                    }
+                    
                         
                     }
                 );
@@ -59,11 +64,15 @@ const getAlbums = (term) => {
             fetch(baseURL + "?type=album&q=" + term)
                 .then((data) => data.json())
                 .then((data) => {
-                    console.log("albums: ", data );
+                    if (data.length >0){
+                        console.log("albums: ", data );
                         for(const albumData of data){
                             console.log("album: ", albumData);
                             elem.innerHTML += getAlbumsHTML (albumData);
                         }
+                    } else {
+                        elem.innerHTML = "no albums found that match search criteria";
+                    }
                         
                     }
                 );
@@ -108,7 +117,7 @@ const getArtistHTML = (data) => {
     return `<section class="artist-card" id=${data.id}>
     <div>
         <img src="${data.image_url}">
-        <h2>BTS</h2>
+        <h2>"${data.name}"</h2>
         <div class="footer">
             <a href="${data.spotify_url}" target="_blank">
                 view on spotify
@@ -131,3 +140,14 @@ document.querySelector('#search').onkeyup = (ev) => {
         search();
     }
 };
+
+// audio player??
+//const playSong = (ev) => {
+    
+ //   const index = ev.currentTarget.dataset.index;
+ //   console.log(index);
+  //  const track = tracks[index].preview_url;
+    //document.querySelector("#audio-source").src = track;
+    //const audio = document.querySelector('audio');
+    //audio.load();
+    //audio.play();
