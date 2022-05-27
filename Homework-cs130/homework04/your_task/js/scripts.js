@@ -43,7 +43,7 @@ const getTracks = (term) => {
 
 getTrackHTML = (data) => {
     return `<button class="track-item preview" data-preview-track=${data.preview_url} onclick="handleTrackClick(event);">
-    <img src=${data.album.image_url}>
+    <img src=${data.album.image_url} alt="${data.name} album">
     <i class="fas play-track fa-play" aria-hidden="true"></i>
     <div class="label">
         <h2>${data.name}</h2>
@@ -81,7 +81,7 @@ const getAlbums = (term) => {
 const getAlbumsHTML = (data) => {
     return `<section class="album-card" id=${data.id}>
     <div>
-        <img src=${data.image_url}>
+        <img src=${data.image_url} alt="${data.name} album">
         <h2>${data.name}</h2>
         <div class="footer">
             <a href=${data.spotify_url} target="_blank">
@@ -116,7 +116,7 @@ const getArtist = (term) => {
 const getArtistHTML = (data) => {
     return `<section class="artist-card" id=${data.id}>
     <div>
-        <img src="${data.image_url}">
+        <img src="${data.image_url}" alt="${data.name} profile">
         <h2>"${data.name}"</h2>
         <div class="footer">
             <a href="${data.spotify_url}" target="_blank">
@@ -130,7 +130,40 @@ const getArtistHTML = (data) => {
 const handleTrackClick = (ev) => {
     const previewUrl = ev.currentTarget.getAttribute('data-preview-track');
     console.log(previewUrl);
+    document.querySelector('footer').image_url = '${data.album.image_url}';
+    //document.querySelector('current-track')= previewUrl;
+    //console.log(set current track);
+    const previewTrack = ev.currentTarget.innerHTML;
+    document.querySelector('#current-track').innerHTML = previewTrack;
+    audioPlayer.setAudioFile(previewUrl);
+    audioPlayer.play();
 }
+
+//const getFooterHTM = (data) => {
+ //   `
+ //       <div class="footer" id=${data.id}>
+ //               <img src=${data.image_url}>
+//              <h2>${data.name}</h2>
+//                <h3>${data.artist.name}</h3>
+ //           </a>
+//        </div>
+//    </div>
+//</section>`
+//}
+
+document.querySelector
+
+//const playSong = (ev) => {
+    
+  // const previewUrl = ev.currentTarget.getAttribute('data-preview-track');
+  // console.log(previewUrl);
+  //  document.querySelector('current-track').src = previewUrl;
+   // console.log("current track set to previewUrl");
+   //const audio = document.querySelector('previewUrl');
+   //audioPlayer.setAudioFile(previewUrl);
+  // console.log("audio player set")
+  // audio.play();
+//}
 
 document.querySelector('#search').onkeyup = (ev) => {
     // Number 13 is the "Enter" key on the keyboard

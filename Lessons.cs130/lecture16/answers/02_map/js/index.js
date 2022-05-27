@@ -1,5 +1,8 @@
 //initialize map:
 const mymap = L.map('mapid').setView([51.5, -0.09], 11);
+url = ''
+fetch(url)
+    
 
 //initialize tiles (there are many options):
 // L.tileLayer.provider('Stamen.TonerLite').addTo(mymap);
