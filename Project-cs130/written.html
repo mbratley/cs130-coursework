@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <!-- stylesheets and metadata go here -->
-        <title>Welcome</title>       
+        <title>Written: Madison Bratley</title>       
         <link rel="stylesheet" href="writtenstyle.css"/>
-
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+        </style>
     </head>
     <body>
         <nav class="navbar">
@@ -20,13 +22,29 @@
             <h1>Daily Northwestern and Payton Paw Print</h1>
             <p>Spring 2022</p>
             <!-- HTML content tags go here -->
-            <section class="written-work">
+            <section id="featured-written">
+            <section class="written-card">
                 <img src="Images\written-work\MockTrialStory.png"/>
-                <a href="https://dailynorthwestern.com/2022/04/21/campus/northwestern-mock-trial-wins-eighth-place-in-national-competition/"> Mock Trial</a>
+                    <div class="card-footer">
+                        <a href="https://dailynorthwestern.com/2022/04/21/campus/northwestern-mock-trial-wins-eighth-place-in-national-competition/"> Mock Trial</a>
+                        <h4> Daily Northwestern, April 2022</h4>
+                    </div>
+            </section>
+            <section class="written-card">
                 <img src="Images\written-work\Editorial.png"/>
-                <a href="https://paytonpawprint.com/2021/06/24/editorial-keep-the-first-draft-of-history-alive-reinstate-paytons-acclaimed-newspaper-and-broadcast-classes/">EDITORIAL — Keep the first draft of history alive: reinstate Payton’s acclaimed newspaper and broadcast classes</a>
-                <img src = "Images\written-work\Strike-to-remember.png"/> 
-                <a href="https://illinoisjea.org/index.php?gf-download=2020%2F03%2FNov-pp-1-and-7-Madison.pdf&form-id=5&field-id=14&hash=d4727ab157772dd2381415a79cfbf8ca49cbff7bb5ab147102a69629f6b738fe">Amidst strike, teachers’ kids had unique view</a>
+                    <div class="card-footer">
+                        <a href="https://paytonpawprint.com/2021/06/24/editorial-keep-the-first-draft-of-history-alive-reinstate-paytons-acclaimed-newspaper-and-broadcast-classes/">EDITORIAL — Keep the first draft of history alive</a>
+                        <h4> Payton Paw Print, June 2021 </h4>
+                    </div>
+            </section>
+            <section class="written-card">
+                <img src = "Images\written-work\Strike-to-remember.png"/>
+                    <div class="card-footer">
+                        <a href="https://illinoisjea.org/index.php?gf-download=2020%2F03%2FNov-pp-1-and-7-Madison.pdf&form-id=5&field-id=14&hash=d4727ab157772dd2381415a79cfbf8ca49cbff7bb5ab147102a69629f6b738fe">Amidst strike, teachers’ kids had unique view</a>
+                        <h4>Payton Paw Print, Oct/Nov 2019</h4>
+                        <h5> 1st Place Feature story, IJEA 2020 </h5>
+                    </div>
+            </section>
             </section>
         </main>
     </body>

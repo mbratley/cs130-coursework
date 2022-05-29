@@ -1,0 +1,32 @@
+.navbar{
+    font-family: 'Nunito', sans-serif !important;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+body{
+    background-color: aliceblue;
+}
+main{
+    font-family: 'Hind', sans-serif;
+}
+main h1, p {
+    padding-left: 30px;
+}
+.audio-work{
+    margin: 30px;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+   "a b"
+   "c d"
+}
+

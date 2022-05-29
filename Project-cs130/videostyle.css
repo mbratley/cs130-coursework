@@ -1,0 +1,23 @@
+.navbar{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  body{
+    background-color: aliceblue;
+  }
+  main {
+    font-family: 'Hind', sans-serif;
+    padding-left: 40px;
+  }
+
+  .video-work img{
+    height: 100vh;
+  }
+   
+
+ 
