@@ -29,4 +29,10 @@ main h1, p {
    "a b"
    "c d"
 }
-
+.audio-blurb ul{
+    margin-left: 30px;
+}
+.audio-blurb h2, h4{
+        /*margin-left: 400px;*/
+        text-align: center;
+}

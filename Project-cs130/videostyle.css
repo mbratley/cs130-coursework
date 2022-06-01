@@ -15,9 +15,26 @@
     padding-left: 40px;
   }
 
-  .video-work img{
-    height: 100vh;
+  .video-work video{
+     height: 100vh; 
   }
+ .video-work img {
+   height: 50vh;
+   padding-left: 30px;
+ }
+
+ .video-work {
+   display: flex;
+   flex-direction: row;
+ }
+ .video-blurb {
+   font-size: 25px;
+ }
+ .video-blurb p {
+   padding-left: 30px;
+ }
+
+
    
 
  

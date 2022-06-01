@@ -15,7 +15,11 @@
 main{
   font-family: 'Hind', sans-serif;
 }
-#featured-written{
+
+main h1, p {
+  padding-left: 30px;
+}
+/*#featured-written{
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
@@ -31,7 +35,7 @@ main{
 .written-card{
   /*display: flex;
   flex-direction:row;*/
-  border: 10px;
+  /*border: 10px;
   border-color:black;
 }
 .written-card > div {
@@ -41,6 +45,61 @@ main{
   justify-content: center;
   font-size: 20px;
   width: 20%;
+}*/
+.written-images img{
+  height: 50vh;
+}
+.written-images{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 10px;
+  border-color:rgb(229, 229, 229);
+  justify-content: space-between;
 }
 
+.written-image{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  border-style:groove;
+}
+.written-footer{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Tiro Telugu', serif;
+  font-size: 25px;
 
+}
+.card-footer {
+  margin: 30px;
+  width: 30%;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  border-style:groove;
+
+  justify-content: space-between;
+  background-color:whitesmoke;
+  margin-top:5px;
+  margin-left: 5px;
+}
+
+.card-footer h4, h5{
+  padding-left: 40px;
+}
+/*.written-footer p, h4, h5 {
+  background-color:blue;
+}*/
+
+.written-blurb{
+  padding-left: 30px;
+  font-family: 'Hind', sans-serif;
+  font-size: 25px;
+}
+.written-blurb ul{
+  font-size: 25px;
+}

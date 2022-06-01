@@ -1,4 +1,4 @@
-{
+body *{
     box-sizing: border-box;
 }
 main{
@@ -18,8 +18,13 @@ body {
     width: 100%;
     flex-direction: row;
 }
+
+.main-image{
+    height: 50vh;
+}
 img {
-    width: 50%;
+    height: 100%;
+    /*width: 50%;*/
     margin-left: 300px;
     margin-top: 50px;
     border-top-left-radius: 15%;
@@ -31,15 +36,8 @@ img {
     padding-right: 185px;
 }
 
-
-.section {
-    padding-right: 10vw;
-    padding-left: 10vw;
-    flex-direction: row;
-    align-items: center;
-    }
-
 #navbar {
+    height: 50vh;
     margin-top: 50px;
     margin-right:400px;
     padding: 20px;
@@ -61,6 +59,13 @@ section {
     flex-grow: 1
 }
 
+.section {
+    padding-right: 10vw;
+    padding-left: 10vw;
+    flex-direction: row;
+    align-items: center;
+    }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -71,8 +76,8 @@ section {
 header{
     background-color: rgb(239, 239, 239);
     background-blend-mode: color;
-    border-color:black;
-    border-style:dashed;
+    border-color:rgb(143, 142, 142);
+    border-style:groove;
     border-right: 20px;
     border-bottom: 20px;
 }
