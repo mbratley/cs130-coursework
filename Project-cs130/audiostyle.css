@@ -10,6 +10,10 @@
 body{
     background-color: aliceblue;
 }
+body p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+}
 main{
     font-family: 'Hind', sans-serif;
 }
@@ -35,4 +39,7 @@ main h1, p {
 .audio-blurb h2, h4{
         /*margin-left: 400px;*/
         text-align: center;
+}
+.audio-blurb {
+    font-family: 'Noto Sans TC', sans-serif;
 }

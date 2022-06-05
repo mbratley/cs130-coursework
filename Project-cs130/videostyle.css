@@ -10,6 +10,10 @@
   body{
     background-color: aliceblue;
   }
+  body p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+}
   main {
     font-family: 'Hind', sans-serif;
     padding-left: 40px;
@@ -29,6 +33,7 @@
  }
  .video-blurb {
    font-size: 25px;
+   font-family: 'Noto Sans TC', sans-serif;
  }
  .video-blurb p {
    padding-left: 30px;

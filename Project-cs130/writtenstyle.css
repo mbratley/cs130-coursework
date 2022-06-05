@@ -11,6 +11,10 @@
   body{
     background-color: aliceblue;
   }
+  body p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+}
 
 main{
   font-family: 'Hind', sans-serif;
@@ -52,7 +56,7 @@ main h1, p {
 .written-images{
   display: flex;
   flex-direction: row;
-  width: 30%;
+  /*width: 30%;*/
   justify-content: space-between;
   padding-top: 30px;
   padding-right: 30px;
@@ -65,19 +69,63 @@ main h1, p {
 .written-image{
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
+  margin-right: 10px;
   border-style:groove;
+  width: 33.3%;
+  margin-left: 8px;
 }
+
+.written-image img{
+  width: 100%;
+}
+/* THE CODE THAT WORKED OKAY BEFORE*/
+
 .written-footer{
   display: flex;
   flex-direction: row;
   font-family: 'Tiro Telugu', serif;
   font-size: 25px;
-
+  justify-content: space-between;
+  margin-left:0px;
+  margin-right:0px;
 }
 .card-footer {
-  margin: 30px;
+  margin: 20px;
+  /*width: 60vh;*/
+  padding-bottom: 30px;
+  padding-right: 12px;
+  border-style:groove;
+
+  justify-content: space-between;
+  background-color:whitesmoke;
+  margin-top:5px;
+  /*margin-left: 5px;*/
+  align-items: center;
+}
+.written-footer > div{
+  width: 33.3%;
+  width: 60vh;
+  /*margin-left: 30px;
+  margin-right: 100px;*/
+}
+/* THE TRIAL CODE*/
+/*.written-footer {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Tiro Telugu', serif;
+  font-size: 25px;
+  margin-right: 20px;
+  height: 100vh;
+}
+.written-footer >div {
   width: 30%;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 350px;
+}
+.card-footer {
   padding-bottom: 30px;
   padding-right: 30px;
   border-style:groove;
@@ -86,10 +134,11 @@ main h1, p {
   background-color:whitesmoke;
   margin-top:5px;
   margin-left: 5px;
-}
+}*/
 
-.card-footer h4, h5{
-  padding-left: 40px;
+/* KEEP THIS CODE */
+.card-footer p, h4, h5{
+  padding-left: 20px;
 }
 /*.written-footer p, h4, h5 {
   background-color:blue;
@@ -97,7 +146,7 @@ main h1, p {
 
 .written-blurb{
   padding-left: 30px;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   font-size: 25px;
 }
 .written-blurb ul{

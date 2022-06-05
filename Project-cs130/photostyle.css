@@ -10,6 +10,10 @@
 body{
   background-color: aliceblue;
 }
+body p {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+}
 {
   box-sizing: border-box; 
 }
@@ -33,6 +37,7 @@ section img{
      display:flex;
     justify-content: space-around;
     margin-left: 250px;
+    border-radius:5px;
 }
 
 main{
@@ -41,9 +46,11 @@ main{
 .gallery-intro{
   margin-left:50px;
   font-size: 25px;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 .photo-blurb{
   margin-top: 100px;
   margin-left: 70px;
   font-size: 20px;
+  font-family: 'Noto Sans TC', sans-serif;
 }

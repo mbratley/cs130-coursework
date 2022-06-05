@@ -13,6 +13,10 @@ body{
 body h1, p {
     padding-left: 30px;
 }
+body p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+}
 .main-image img{
     border-radius: 100px;
        /* height: 50vh; */
@@ -20,6 +24,7 @@ body h1, p {
         margin-left: auto;
         margin-right: auto;
         /*width: 50%;*/
+        height:50vh;
 }
 main{
     font-family: 'Hind', sans-serif;
@@ -36,4 +41,9 @@ main{
 }
 .about-blurb {
     text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.about img {
+    height: 9vh;
 }
